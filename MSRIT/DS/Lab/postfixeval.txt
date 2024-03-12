@@ -1,0 +1,75 @@
+#include<stdio.h>
+#include<string.h>
+
+#define MAX 20
+int top=-1;
+int stack[20];
+
+
+void push(int n)
+{
+    if(top==MAX-1)
+    {
+        printf("STACK FULL \n");
+    }
+    else
+    {
+        top++;
+        stack[top]=n;
+    }
+}
+
+int pop()
+{
+    if(top==-1)
+    {
+        printf("STACK IS EMPTY \n");
+    }
+    else
+    {
+        int num;
+        num = stack[top];
+        top--;
+        return num;
+    }
+}
+
+void main()
+{
+   
+    char expr[20]="231*+9-";
+    int i=0;
+    while((expr[i]!='\0')&&(expr[i]!='\n'))
+    {
+        if((expr[i]=='+')||(expr[i]=='-')||(expr[i]=='*')||(expr[i]=='*'))
+        {
+            int opr2 =pop();
+            int opr1 =pop();
+            char ch = expr[i];
+            switch (ch)
+            {
+                case '+':
+                    push(opr1+opr2);
+                    break;
+                case '-':
+                    push(opr1-opr2);
+                    break;
+                case '*':
+                    push(opr1*opr2);
+                    break;
+                case '/':
+                    push(opr1/opr2);
+                    break;
+                default:
+                    printf("INVALID OPERATER USED\n");
+            }
+        }
+        else if(expr[i]>='0' && expr[i] <= '9')
+    {
+            int ele = (int)expr[i] - 48;
+            push(ele);
+        }
+        i++;
+    }
+printf("%d",stack[top]);
+}

@@ -1,0 +1,63 @@
+exercise 2:
+1)
+total_class = int(input("Enter total number of class condudcted"))
+atten_class = int(input("Enter total class attended"))
+
+p_p = (atten_class/total_class)*100;
+
+if p_p<75.0:
+    print("Not allowed go home and cry")
+else:
+    print("Student is allowed to Sit in Exam")
+    marks = int(input("Enter total marks"))
+    if marks<25:
+        print("FAIL")
+    elif marks>=25 and marks<45:
+        print("Grade E")
+    elif marks>=45 and marks<50:
+        print("Grade D")
+    elif marks>=50 and marks<60:
+        print("Grade C")
+    elif marks>=60 and marks<80:
+        print("Grade B")
+    elif marks>=80 and marks<100:
+        print("Grade A")
+    else:
+        print("Marks Should be below 100")
+
+2)
+pcode = int(input("Enter the product code only 1 to 3 \n"))
+o_amount = int(input("Enter total order amount \n"))
+
+if pcode<1 or pcode>3:
+    print("Product Does Not Exist \n")
+else:
+    net = o_amount
+    if pcode==1 and o_amount>1000:
+        net = o_amount - (o_amount*0.10)
+    elif pcode==2 and o_amount>100:
+        net = o_amount -(o_amount*0.05)
+    elif pcode==3 and o_amount>500:
+        net = o_amount -(o_amount*0.10)
+    print("Net Payable Amount: \t",net)
+   
+3)
+
+n1 = int(input("Enter the first operand: "))
+n2 = int(input("Enter second operand: "))
+ch = input("Enter the operator: ")
+if ch=='+':
+    res = n1+n2
+elif ch=='-':
+    res = n1-n2
+elif ch=='*':
+    res =n1*n2
+elif ch=='/':
+    if n2!=0:
+        res=n1/n2
+    else:
+        print("DivisionBYZeroError!")
+        res=0
+else:
+    print("Invalid Operator")
+print("Result: ",res)

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+<style>
+    form {
+        max-width: 350px;
+        max-height: 1000px;
+        margin: 0 auto;
+        
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        background-color: #ffffff;
+    }
+    
+</style>
+</head>
+<body>
+    <form action="" >
+        <div  style=" background-color: #d17b12; padding-top: 10px;padding-bottom: 10px;padding-left: 5px;text-align: left;">
+            Sign Up
+        </div>
+        <div style="background-color: #20b8f9;text-align: center;">
+
+            
+            <br>
+            <label for="fname">First Name </label>
+            <input type="text" name="Enter First Name" id="fname" placeholder="Enter First Name" ><br><br>
+            <label for="lname">Last Name </label>
+            <input type="text" name="Enter Last Name" id="lname" placeholder="Enter Last Name"><br><br>
+            <label for="dob">Date of Birth </label>
+            <input type="date" name="dob" id="dob"> <br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" >Male 
+            <input type="radio" name="gender"  id="female" >female
+            <!-- radio buttons "name" should be same for them to work as a single select only -->
+            <br/><br>
+            Country <select name="list of countries" id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Dubai">Dubai</option>
+            </select><br><br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email"><br><br>
+            <label for="phnum">Phone</label>
+            <input type="tel" required pattern="[0-9]{10}" name="phnum" id="phnum" placeholder="Enter phone"><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <br><br>
+            <label for="cpass">Confirm Password </label>
+            <input type="password" name="cpass" id="cpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <br><br>
+
+    <div style="text-align: right;padding-right: 5px;">
+                <input type="checkbox" name="agree" id="agree">I Agree to the Terms of Use
+    </div>
+            
+        
+    </div>
+    <div style=" background-color: #d17b12;padding-top: 10px;padding-bottom: 10px;padding-right: 5px;text-align: right;">
+        
+            <input type="submit" value="submit" name="submit" id="submit">
+            <input type="reset" value="cancel" name="Cancel" id="cancel">
+
+    </div>
+    </form>
+</body>
+</html>

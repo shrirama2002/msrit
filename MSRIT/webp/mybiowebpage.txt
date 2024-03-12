@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrirama Kamath</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            background-blend-mode: luminosity;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNVbkf3IVGt-JC_pZw-1knVpeufdfwxSnFRKdEPlwyLi5cEW914RKQkJ66w4qI1HnkINE&usqp=CAU);
+            padding: 50px 0;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 3em;
+            font-family: 'Lucida Sans', sans-serif;
+            margin: 0;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 1.25em;
+            margin: 20px 0;
+        }
+
+        .intro strong {
+            font-weight: bold;
+        }
+
+        .courses {
+            font-size: 1.25em;
+            padding-left: 20px;
+        }
+
+        .movies {
+            font-size: 1.25em;
+            padding-left: 20px;
+        }
+
+        .artist {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .artist img {
+            width: 300px;
+            height: auto;
+            border: 5px solid #ec3903;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        table img {
+            height: 250px;
+            width: 250px;
+        }
+
+        table td {
+            text-align: center;
+            padding: 20px;
+            vertical-align: top;
+        }
+
+        h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>SHRIRAMA KAMATH</h2>
+    </header>
+    <div class="intro">
+        An <strong>enthusiastic</strong> person with <strong>great programming skills</strong> and <strong>excellent communication</strong> abilities.<br>
+        I'm a <strong>team person</strong> who can handle tough situations and complete my work within <strong>allotted time.</strong>
+    </div>
+    <div class="courses">
+        <p>The courses that I'm pursuing are:</p>
+        <ul>
+            <li>Data Structures</li>
+            <li>Python Programming</li>
+            <li>Web Programming</li>
+            <li>Database Systems</li>
+            <li>Unix OS</li>
+        </ul>
+    </div>
+    <div class="movies">
+        <p>The Movies that I like are:</p>
+        <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Marvel_Entertainment" target="_blank" rel="noopener noreferrer">Marvel Movies</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Harry_Potter_(film_series)" target="_blank" rel="noopener noreferrer">Harry Potter Movies</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Kung_Fu_Panda_(film)" target="_blank" rel="noopener noreferrer">Kung Fu Panda</a></li>
+        </ol>
+    </div>
+    <div class="artist">
+        <p>My favorite Artist:</p>
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202310/arijit-singh-235820718-16x9_0.jpg?VersionId=luMFET9RvtZbKmgtYUcc0vqvxyTnbBaw&size=690:388" alt="Image of Arijit Singh">
+        <h6><a href="https://en.wikipedia.org/wiki/Arijit_Singh" target="_blank" rel="noopener noreferrer">Arijit Singh</a></h6>
+    </div>
+    <div class="footer">
+        <table>
+            <tr>
+                <td>
+                    <img src="https://t3.ftcdn.net/jpg/03/23/92/38/240_F_323923845_sB6dVDxEFFJOqJB6Rn6kCyf3tBe1RRaA.jpg" alt="">
+                    <p>When I'm Sad</p>
+                </td>
+                <td>
+                    <img src="https://media.tenor.com/RVC8vW63M6YAAAAM/emoji-fudido.gif" alt="">
+                    <p>When I'm Happy</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+no 2
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrirama Kamath</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: antiquewhite;
+        }
+        header {
+            text-align: center;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNVbkf3IVGt-JC_pZw-1knVpeufdfwxSnFRKdEPlwyLi5cEW914RKQkJ66w4qI1HnkINE&usqp=CAU);
+            background-size: cover;
+            color: white;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 3em;
+            font-family: 'Lucida Sans', sans-serif;
+            margin: 0;
+        }
+        .intro {
+            text-align: center;
+            font-size: 1.2em;
+            padding: 20px;
+        }
+        .content {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        ul, ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .artist {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .artist img {
+            width: 400px;
+            height: 250px;
+            border: 5px solid rgb(236, 57, 3);
+            display: block;
+            margin: 0 auto;
+        }
+        .artist h2 {
+            font-size: 1.5em;
+        }
+        .gallery {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+        }
+        .gallery h3 {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shrirama Kamath</h1>
+    </header>
+    <div class="intro">
+        An <strong>enthusiastic</strong> person with <strong>great programming skills</strong> and <strong>excellent communication</strong> abilities.
+        <br>I'm a <strong>team player</strong> who can handle tough situations and complete work within <strong>allotted time</strong>.
+    </div>
+    <div class="content">
+        <h2>Courses I'm Pursuing:</h2>
+        <ul>
+            <li>Data Structures</li>
+            <li>Python Programming</li>
+            <li>Web Programming</li>
+            <li>Database Systems</li>
+            <li>Unix OS</li>
+        </ul>
+        <div class="artist">
+            <h2>My Favorite Artist: Arijit Singh</h2>
+            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202310/arijit-singh-235820718-16x9_0.jpg?VersionId=luMFET9RvtZbKmgtYUcc0vqvxyTnbBaw&size=690:388" alt="Arijit Singh">
+            <p>Find out more about <a href="https://en.wikipedia.org/wiki/Arijit_Singh" target="_blank">Arijit Singh</a></p>
+        </div>
+        <div class="gallery">
+            <h2>Movies I Like:</h2>
+            
+               <a href="https://en.wikipedia.org/wiki/Marvel_Entertainment" target="_blank">Marvel Movies</a><br>
+                <a href="https://en.wikipedia.org/wiki/Harry_Potter_(film_series)" target="_blank">Harry Potter Movies</a><br>
+                <a href="https://en.wikipedia.org/wiki/Kung_Fu_Panda_(film)" target="_blank">Kung Fu Panda</a><br>
+            
+        </div>
+        <div class="gallery">
+            <h2>You'll Find Me Like This:</h2>
+            <img src="https://t3.ftcdn.net/jpg/03/23/92/38/240_F_323923845_sB6dVDxEFFJOqJB6Rn6kCyf3tBe1RRaA.jpg" alt="When I'm Sad">
+            <img src="https://media.tenor.com/RVC8vW63M6YAAAAM/emoji-fudido.gif" alt="When I'm Happy">
+            <h3>When I'm Sad & Happy</h3>
+        </div>
+    </div>
+</body>
+</html>
+

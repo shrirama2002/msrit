@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    
+</head>
+<body>
+    <form action="" method="post">
+    <table border="3">
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+        <tr>
+            <td>Enter Name</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password" autofocus required></td>
+        </tr>
+        <tr>
+            <td>Enter E-mail</td>
+            <td><input type="email" required></td>
+        </tr>
+        <tr>
+            <td>Enter Address</td>
+            <td><textarea name="address" id="address" cols="15" rows="3" required></textarea></td>
+        </tr>
+        <tr>
+            <td>Select Game</td>
+            <td>
+                    <input type="checkbox" name="game" id="game1" > Hockey<br>
+                    <input type="checkbox" name="game" id="game2" > Football<br>
+                    <input type="checkbox" name="game" id="game3" > Badminton<br>
+                    <input type="checkbox" name="game" id="game4" > Cricket<br>
+                    <input type="checkbox" name="game" id="game5" > Vollyball
+            </td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" id="male" required> Male
+                <input type="radio" name="gender" id="female" required> Female
+            </td>
+        </tr>
+        <tr>
+            <td>Select ur age</td>
+            <td>
+                <select name="age" id="age" default="select" required>
+                    <option value=""> select</option>
+                    <option value="6"> 6</option>
+                    <option value="7"> 7</option>
+                    <option value="8"> 8</option>
+                    <option value="9"> 9</option>
+                    <option value="10"> 10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Select Photo</td>
+            <td>
+                <input type="file" name="photo" id="photo" accept="image/*">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="reset" name="reset" value="Reset" id="reset" >
+                <input type="submit" name="Submit Form" value="Submit Form" id="submit">
+            </td>
+        </tr>
+
+        
+
+    </table>
+
+    </form>
+</body>
+</html>

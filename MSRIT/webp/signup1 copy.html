@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+<style>
+    form {
+        width: 350px;
+        max-height: 3000px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        background-color: #ffffff;
+        
+    }
+    tr {
+        text-align:right;
+        
+    }
+    td{
+        text-align: left;
+        padding-bottom: 10px;
+        padding-right: 5px;
+    }
+
+</style>
+</head>
+<body>
+    <form action="" style="font-family: 'Times New Roman';">
+        <div  style=" background-color: #d17b12; padding-top: 10px;padding-bottom: 10px;padding-left: 5px;text-align: left;">
+            Sign Up
+        </div>
+        <div style="background-color: #20b8f9;text-align: center;display: flex;padding-top: 10px;">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="text-align: right;">First Name </td>
+                    <td><input type="text" name="Enter First Name" id="fname" placeholder="Enter First Name" ></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Last Name </td>
+                    <td><input type="text" name="Enter Last Name" id="lname" placeholder="Enter Last Name"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Date of Birth</td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Gender</td>
+                    <td><input type="radio" name="gender" id="male" >Male 
+                        <input type="radio" name="gender"  id="female" >female</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Country</td>
+                    <td><select name="list of countries" id="country">
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="Dubai">Dubai</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">E-mail     </td>
+                    <td><input type="email" name="email" id="email" placeholder="Enter Email" required></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Phone</td>
+                    <td><input type="tel" required pattern="[0-9]{10}" name="phnum" id="phnum" placeholder="Enter phone"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Password</td>
+                    <td><input type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Confirm Password</td>
+                    <td><input type="password" name="cpass" id="cpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></td>
+                </tr>
+            
+        </table>
+    </div>  
+    <div style="text-align: right;padding-right: 5px;padding-bottom: 10px;background-color: #20b8f9">
+                <input type="checkbox" name="agree" id="agree">I Agree to the Terms of Use
+    </div>
+            
+        
+    
+    <div style=" background-color: #d17b12;padding-top: 10px;padding-bottom: 10px;padding-right: 5px;text-align: right;">
+        
+            <input type="submit" value="submit" name="submit" id="submit">
+            <input type="reset" value="cancel" name="Cancel" id="cancel">
+
+    </div>
+    </form>
+</body>
+</html>

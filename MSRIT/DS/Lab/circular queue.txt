@@ -1,0 +1,76 @@
+#include<stdio.h>
+
+#define MAX 5
+
+int queue[MAX];
+int front = 0,rear=0,size=0;
+
+int isempty()
+{
+    if(size==0) 
+        return 1;
+    return 0;
+}
+
+int isfull() 
+{
+    if(size==MAX)
+        return 1;
+    return 0;
+}
+
+void enqueue(int n)
+{
+    if(isfull())
+    {
+        printf("QUEUE FULL \n");
+        return;
+    }
+
+        rear = rear % MAX;
+        queue[rear]=n;
+        printf("%d inserted at %d \n",n,rear);
+        rear++;
+        size++;
+    
+}
+
+int dequeue()
+{
+    if(isempty())
+        {
+            printf("QUEUE EMPTY \n");
+            return;
+        }
+        int ele;
+        ele=queue[front];
+        //printf("Element dequeued is %d \n",ele);
+        front = (front+1)%MAX;
+        //printf("New front is  %d \n",front);
+        if(size!=0)
+        {
+            size--;
+        }
+        return ele;
+    
+}
+
+
+void main()
+{
+    int n,m,p,q;
+    n=isfull();
+    m=isempty();
+    printf("%d and %d \n",n,m);
+    dequeue();
+    enqueue(71);
+    enqueue(72);
+    printf("Element dequeued is: %d \n",dequeue());
+    printf("Element dequeued is: %d \n",dequeue());
+    dequeue();
+    p=isfull();
+    q=isempty();
+    printf("%d and %d \n",p,q);
+    
+}
+
